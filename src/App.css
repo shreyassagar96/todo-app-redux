@@ -1,10 +1,36 @@
 .App {
   text-align: center;
+  background-color: rgb(16, 13, 13);
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 4rem;
+  box-shadow: 7px 12px 9px 4px rgb(40, 38, 38);
+  border-radius: 20px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 90%;
+    display: flex;
+    margin: auto;
+  }
+  .App {
+    box-shadow: none;
+  }
+  .list {
+    background-color: #282c34;
+  }
+  .btn {
+    margin-top: 10px;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
